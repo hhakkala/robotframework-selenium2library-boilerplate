@@ -10,5 +10,5 @@ manually install any Python libraries.
 Running
 -------
 
-    export PYTHONPATH=$PYTHONPATH:`pwd`/Lib
-    python Lib/robot/runner.py robot-tests/example.txt
+    $ export PYTHONPATH=$PYTHONPATH:`pwd`/Lib
+    $ python Lib/robot/runner.py robot-tests/example.txt
