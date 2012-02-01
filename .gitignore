@@ -1,0 +1,6 @@
+.idea
+*.pyc
+log.html
+output.xml
+report.html
+robotframework-selenium2library-boilerplate.iml
