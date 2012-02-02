@@ -1,22 +1,22 @@
-| *Setting*					| *Value*
-| Library					| Selenium2Library
-| Suite Setup				| Open Browser						| http://www.futurice.com
-| Suite Teardown			| Close Browser
+| *Setting*                  | *Value*
+| Library                    | Selenium2Library
+| Suite Setup                | Open Browser                        | http://www.futurice.com
+| Suite Teardown             | Close Browser
 
-| *Test Case*				| *Action*
+| *Test Case*                | *Action*
 | Page title changes
-|							| Given viewing the 'Services' page
-|							| When navigating back to the front page
-|							| Then title should have changed
+|                            | Given viewing the 'Services' page
+|                            | When navigating back to the front page
+|                            | Then title should have changed
 
-| *Keyword*					| *Action*				| *Argument*
+| *Keyword*                  | *Action*                | *Argument*
 | Viewing the 'Services' page
-|							| Go To					| http://www.futurice.com/offering-portfolio
-|							| Set Test Variable		| ${TITLE}	| Get Title
+|                            | Go To                   | http://www.futurice.com/offering-portfolio
+|                            | Set Test Variable       | ${TITLE}    | Get Title
 
 | Navigating back to the front page
-|							| Click Link			| main-nav-logo
+|                            | Click Link              | main-nav-logo
 
 | Title should have changed
-|							| ${current_title}=		| Get Title
-|							| Should Not Be Equal	| ${TITLE}	| ${current_title}
+|                            | ${current_title}=       | Get Title
+|                            | Should Not Be Equal     | ${TITLE}    | ${current_title}
